@@ -1,103 +1,150 @@
 {
   "elements": [
     {
-      "label": "The Mothership (VPS)",
+      "label": "2025-12-08",
+      "type": "Date",
+      "Status": "Completed",
+      "description": "Testing Remote Server Infrastructure for Mothership",
+      "Spoke": "[Tech]",
+      "reference_link": "Report_Dec08.pdf",
+      "id": "2025-12-08"
+    },
+    {
+      "label": "Windows Server 2016",
       "type": "Infrastructure",
-      "status": "Ubuntu Cloud Server",
-      "description": "Cloud",
-      "id": "The Mothership (VPS)"
+      "Status": "Abandoned",
+      "description": "Remote Data Center environment (Legacy)",
+      "Spoke": "[Tech]",
+      "reference_link": "Report_Dec08.pdf",
+      "id": "Windows Server 2016"
     },
     {
-      "label": "RStudio Container",
-      "type": "Container",
-      "status": "The Brain / Processing Logic",
-      "description": "Docker",
-      "id": "RStudio Container"
+      "label": "Native ML Setup",
+      "type": "Task",
+      "Status": "Failed",
+      "description": "Attempted native R+SQL install; configuration too complex",
+      "Spoke": "[Tech]",
+      "reference_link": "Report_Dec08.pdf",
+      "id": "Native ML Setup"
     },
     {
-      "label": "Postgres Container",
-      "type": "Container",
-      "status": "The Memory / Database",
-      "description": "Docker",
-      "id": "Postgres Container"
+      "label": "Docker on Windows",
+      "type": "Task",
+      "Status": "Failed",
+      "description": "Docker engine incompatible with Server 2016 Data Center",
+      "Spoke": "[Tech]",
+      "reference_link": "Report_Dec08.pdf",
+      "id": "Docker on Windows"
     },
     {
-      "label": "Nginx Proxy",
-      "type": "Container",
-      "status": "Security & Routing",
-      "description": "Docker",
-      "id": "Nginx Proxy"
+      "label": "Lab Machine (Laptop)",
+      "type": "Infrastructure",
+      "Status": "Selected",
+      "description": "High-spec local machine chosen as temporary host",
+      "Spoke": "[Tech]",
+      "reference_link": "Report_Dec08.pdf",
+      "id": "Lab Machine (Laptop)"
     },
     {
-      "label": "LINE OA (Chat/Voice)",
-      "type": "Input",
-      "status": "User Interface",
-      "description": "Frontend",
-      "id": "LINE OA (Chat/Voice)"
+      "label": "Local Container Lab",
+      "type": "System",
+      "Status": "Planned",
+      "description": "Dockerized RStudio + Postgres running on Lab Machine",
+      "Spoke": "[Tech]",
+      "reference_link": "Report_Dec08.pdf",
+      "id": "Local Container Lab"
     },
     {
-      "label": "Make.com / GAS",
-      "type": "Middleware",
-      "status": "Automation Bridge",
-      "description": "Automation",
-      "id": "Make.com / GAS"
+      "label": "Production Pipeline",
+      "type": "Process",
+      "Status": "Designed",
+      "description": "Flow: Line -> Gemini -> PSQL -> RStudio -> Outputs",
+      "Spoke": "[Tech]",
+      "reference_link": "Report_Dec08.pdf",
+      "id": "Production Pipeline"
     },
     {
-      "label": "Google Drive",
-      "type": "Storage",
-      "status": "Raw File Lake (Inbox/Outbox)",
-      "description": "Cloud",
-      "id": "Google Drive"
-    },
-    {
-      "label": "Gemini AI",
-      "type": "Intelligence",
-      "status": "Transcription & Entity Extraction",
-      "description": "AI",
-      "id": "Gemini AI"
-    },
-    {
-      "label": "Cafe Pilot DB",
-      "type": "Database",
-      "status": "Tenant: Coffee Shop",
-      "description": "Data",
-      "id": "Cafe Pilot DB"
-    },
-    {
-      "label": "TQF Flow DB",
-      "type": "Database",
-      "status": "Tenant: Education",
-      "description": "Data",
-      "id": "TQF Flow DB"
-    },
-    {
-      "label": "Wisdom Log DB",
-      "type": "Database",
-      "status": "Tenant: Personal",
-      "description": "Data",
-      "id": "Wisdom Log DB"
-    },
-    {
-      "label": "Kumu Graph",
+      "label": "Shiny Dashboard",
       "type": "Output",
-      "status": "Relationship Visualization",
-      "description": "Visual",
-      "id": "Kumu Graph"
+      "Status": "Planned",
+      "description": "Interactive data visualization target",
+      "Spoke": "[Business]",
+      "reference_link": "Report_Dec08.pdf",
+      "id": "Shiny Dashboard"
     },
     {
-      "label": "Google Calendar",
+      "label": "Looker Studio",
       "type": "Output",
-      "status": "Action Items & Alerts",
-      "description": "Visual",
-      "id": "Google Calendar"
-    },
-    {
-      "label": "TQF PDF Report",
-      "type": "Output",
-      "status": "Official Doc Generation",
-      "description": "Visual",
-      "id": "TQF PDF Report"
+      "Status": "Planned",
+      "description": "BI Reporting target",
+      "Spoke": "[Business]",
+      "reference_link": "Report_Dec08.pdf",
+      "id": "Looker Studio"
     }
   ],
-  "connections": []
+  "connections": [
+    {
+      "from": "Windows Server 2016",
+      "to": "Native ML Setup",
+      "type": "!",
+      "Description": "attempted on",
+      "Spoke": "[Tech]"
+    },
+    {
+      "from": "Native ML Setup",
+      "to": "2025-12-08",
+      "type": "!",
+      "Description": "failed (complexity)",
+      "Spoke": "[Tech]"
+    },
+    {
+      "from": "Windows Server 2016",
+      "to": "Docker on Windows",
+      "type": "!",
+      "Description": "attempted on",
+      "Spoke": "[Tech]"
+    },
+    {
+      "from": "Docker on Windows",
+      "to": "2025-12-08",
+      "type": "!",
+      "Description": "failed (compatibility)",
+      "Spoke": "[Tech]"
+    },
+    {
+      "from": "2025-12-08",
+      "to": "Lab Machine (Laptop)",
+      "type": "+",
+      "Description": "pivoted to",
+      "Spoke": "[Tech]"
+    },
+    {
+      "from": "Lab Machine (Laptop)",
+      "to": "Local Container Lab",
+      "type": "+",
+      "Description": "hosts",
+      "Spoke": "[Tech]"
+    },
+    {
+      "from": "Local Container Lab",
+      "to": "Production Pipeline",
+      "type": "+",
+      "Description": "enables",
+      "Spoke": "[Tech]"
+    },
+    {
+      "from": "Production Pipeline",
+      "to": "Shiny Dashboard",
+      "type": ">",
+      "Description": "feeds",
+      "Spoke": "[Business]"
+    },
+    {
+      "from": "Production Pipeline",
+      "to": "Looker Studio",
+      "type": ">",
+      "Description": "feeds",
+      "Spoke": "[Business]"
+    }
+  ]
 }
