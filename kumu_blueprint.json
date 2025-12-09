@@ -1,150 +1,86 @@
 {
   "elements": [
     {
-      "label": "2025-12-08",
+      "label": "2025-12-09",
       "type": "Date",
       "Status": "Completed",
-      "description": "Testing Remote Server Infrastructure for Mothership",
+      "description": "Solution for Mothership Flow: Automating Spokes to Kumu",
       "Spoke": "[Tech]",
-      "reference_link": "Report_Dec08.pdf",
-      "id": "2025-12-08"
+      "reference_link": "https://drive.google.com/file/d/1XhOqobrE-BVJQL22njShhvRvqIYjKdZI/view?usp=drivesdk",
+      "id": "2025-12-09"
     },
     {
-      "label": "Windows Server 2016",
-      "type": "Infrastructure",
-      "Status": "Abandoned",
-      "description": "Remote Data Center environment (Legacy)",
+      "label": "Mothership Flow",
+      "type": "System",
+      "Status": "Designed",
+      "description": "Automated pipeline: Gemini > R Script > JSON > GitHub > Kumu",
       "Spoke": "[Tech]",
-      "reference_link": "Report_Dec08.pdf",
-      "id": "Windows Server 2016"
+      "reference_link": "https://drive.google.com/file/d/1XhOqobrE-BVJQL22njShhvRvqIYjKdZI/view?usp=drivesdk",
+      "id": "Mothership Flow"
     },
     {
-      "label": "Native ML Setup",
+      "label": "JSON Blueprint",
+      "type": "Artifact",
+      "Status": "Planned",
+      "description": "Intermediate file format for error-free import",
+      "Spoke": "[Tech]",
+      "reference_link": "https://drive.google.com/file/d/1XhOqobrE-BVJQL22njShhvRvqIYjKdZI/view?usp=drivesdk",
+      "id": "JSON Blueprint"
+    },
+    {
+      "label": "R Auto-Script",
       "type": "Task",
-      "Status": "Failed",
-      "description": "Attempted native R+SQL install; configuration too complex",
+      "Status": "In Progress",
+      "description": "Script to parse text reports and push JSON to Git",
       "Spoke": "[Tech]",
-      "reference_link": "Report_Dec08.pdf",
-      "id": "Native ML Setup"
+      "reference_link": "https://drive.google.com/file/d/1XhOqobrE-BVJQL22njShhvRvqIYjKdZI/view?usp=drivesdk",
+      "id": "R Auto-Script"
     },
     {
-      "label": "Docker on Windows",
-      "type": "Task",
-      "Status": "Failed",
-      "description": "Docker engine incompatible with Server 2016 Data Center",
-      "Spoke": "[Tech]",
-      "reference_link": "Report_Dec08.pdf",
-      "id": "Docker on Windows"
-    },
-    {
-      "label": "Lab Machine (Laptop)",
+      "label": "GitHub Repo",
       "type": "Infrastructure",
       "Status": "Selected",
-      "description": "High-spec local machine chosen as temporary host",
+      "description": "Version control host for the live Kumu data",
       "Spoke": "[Tech]",
-      "reference_link": "Report_Dec08.pdf",
-      "id": "Lab Machine (Laptop)"
-    },
-    {
-      "label": "Local Container Lab",
-      "type": "System",
-      "Status": "Planned",
-      "description": "Dockerized RStudio + Postgres running on Lab Machine",
-      "Spoke": "[Tech]",
-      "reference_link": "Report_Dec08.pdf",
-      "id": "Local Container Lab"
-    },
-    {
-      "label": "Production Pipeline",
-      "type": "Process",
-      "Status": "Designed",
-      "description": "Flow: Line -> Gemini -> PSQL -> RStudio -> Outputs",
-      "Spoke": "[Tech]",
-      "reference_link": "Report_Dec08.pdf",
-      "id": "Production Pipeline"
-    },
-    {
-      "label": "Shiny Dashboard",
-      "type": "Output",
-      "Status": "Planned",
-      "description": "Interactive data visualization target",
-      "Spoke": "[Business]",
-      "reference_link": "Report_Dec08.pdf",
-      "id": "Shiny Dashboard"
-    },
-    {
-      "label": "Looker Studio",
-      "type": "Output",
-      "Status": "Planned",
-      "description": "BI Reporting target",
-      "Spoke": "[Business]",
-      "reference_link": "Report_Dec08.pdf",
-      "id": "Looker Studio"
+      "reference_link": "https://drive.google.com/file/d/1XhOqobrE-BVJQL22njShhvRvqIYjKdZI/view?usp=drivesdk",
+      "id": "GitHub Repo"
     }
   ],
   "connections": [
     {
-      "from": "Windows Server 2016",
-      "to": "Native ML Setup",
-      "type": "!",
-      "Description": "attempted on",
-      "Spoke": "[Tech]"
-    },
-    {
-      "from": "Native ML Setup",
-      "to": "2025-12-08",
-      "type": "!",
-      "Description": "failed (complexity)",
-      "Spoke": "[Tech]"
-    },
-    {
-      "from": "Windows Server 2016",
-      "to": "Docker on Windows",
-      "type": "!",
-      "Description": "attempted on",
-      "Spoke": "[Tech]"
-    },
-    {
-      "from": "Docker on Windows",
-      "to": "2025-12-08",
-      "type": "!",
-      "Description": "failed (compatibility)",
-      "Spoke": "[Tech]"
-    },
-    {
-      "from": "2025-12-08",
-      "to": "Lab Machine (Laptop)",
+      "from": "2025-12-09",
+      "to": "Mothership Flow",
       "type": "+",
-      "Description": "pivoted to",
+      "Description": "defines solution for",
       "Spoke": "[Tech]"
     },
     {
-      "from": "Lab Machine (Laptop)",
-      "to": "Local Container Lab",
+      "from": "Mothership Flow",
+      "to": "R Auto-Script",
       "type": "+",
-      "Description": "hosts",
+      "Description": "powered by",
       "Spoke": "[Tech]"
     },
     {
-      "from": "Local Container Lab",
-      "to": "Production Pipeline",
-      "type": "+",
-      "Description": "enables",
-      "Spoke": "[Tech]"
-    },
-    {
-      "from": "Production Pipeline",
-      "to": "Shiny Dashboard",
+      "from": "R Auto-Script",
+      "to": "JSON Blueprint",
       "type": ">",
-      "Description": "feeds",
-      "Spoke": "[Business]"
+      "Description": "generates",
+      "Spoke": "[Tech]"
     },
     {
-      "from": "Production Pipeline",
-      "to": "Looker Studio",
+      "from": "JSON Blueprint",
+      "to": "GitHub Repo",
       "type": ">",
-      "Description": "feeds",
-      "Spoke": "[Business]"
+      "Description": "stored in",
+      "Spoke": "[Tech]"
+    },
+    {
+      "from": "GitHub Repo",
+      "to": "Mothership Flow",
+      "type": ">",
+      "Description": "updates",
+      "Spoke": "[Tech]"
     }
   ]
 }
