@@ -1,34 +1,103 @@
 {
   "elements": [
     {
-      "id": "1",
-      "label": "Mother Ship",
-      "type": "Server",
-      "reference_link": "http://myserver.com"
+      "label": "The Mothership (VPS)",
+      "type": "Infrastructure",
+      "status": "Ubuntu Cloud Server",
+      "description": "Cloud",
+      "id": "The Mothership (VPS)"
     },
     {
-      "id": "2",
-      "label": "Satellite A",
-      "type": "Node",
-      "reference_link": "http://google.com"
+      "label": "RStudio Container",
+      "type": "Container",
+      "status": "The Brain / Processing Logic",
+      "description": "Docker",
+      "id": "RStudio Container"
     },
     {
-      "id": "3",
-      "label": "Satellite B",
-      "type": "Node",
-      "reference_link": "http://rstudio.com"
+      "label": "Postgres Container",
+      "type": "Container",
+      "status": "The Memory / Database",
+      "description": "Docker",
+      "id": "Postgres Container"
+    },
+    {
+      "label": "Nginx Proxy",
+      "type": "Container",
+      "status": "Security & Routing",
+      "description": "Docker",
+      "id": "Nginx Proxy"
+    },
+    {
+      "label": "LINE OA (Chat/Voice)",
+      "type": "Input",
+      "status": "User Interface",
+      "description": "Frontend",
+      "id": "LINE OA (Chat/Voice)"
+    },
+    {
+      "label": "Make.com / GAS",
+      "type": "Middleware",
+      "status": "Automation Bridge",
+      "description": "Automation",
+      "id": "Make.com / GAS"
+    },
+    {
+      "label": "Google Drive",
+      "type": "Storage",
+      "status": "Raw File Lake (Inbox/Outbox)",
+      "description": "Cloud",
+      "id": "Google Drive"
+    },
+    {
+      "label": "Gemini AI",
+      "type": "Intelligence",
+      "status": "Transcription & Entity Extraction",
+      "description": "AI",
+      "id": "Gemini AI"
+    },
+    {
+      "label": "Cafe Pilot DB",
+      "type": "Database",
+      "status": "Tenant: Coffee Shop",
+      "description": "Data",
+      "id": "Cafe Pilot DB"
+    },
+    {
+      "label": "TQF Flow DB",
+      "type": "Database",
+      "status": "Tenant: Education",
+      "description": "Data",
+      "id": "TQF Flow DB"
+    },
+    {
+      "label": "Wisdom Log DB",
+      "type": "Database",
+      "status": "Tenant: Personal",
+      "description": "Data",
+      "id": "Wisdom Log DB"
+    },
+    {
+      "label": "Kumu Graph",
+      "type": "Output",
+      "status": "Relationship Visualization",
+      "description": "Visual",
+      "id": "Kumu Graph"
+    },
+    {
+      "label": "Google Calendar",
+      "type": "Output",
+      "status": "Action Items & Alerts",
+      "description": "Visual",
+      "id": "Google Calendar"
+    },
+    {
+      "label": "TQF PDF Report",
+      "type": "Output",
+      "status": "Official Doc Generation",
+      "description": "Visual",
+      "id": "TQF PDF Report"
     }
   ],
-  "connections": [
-    {
-      "from": "1",
-      "to": "2",
-      "type": "Sends Data"
-    },
-    {
-      "from": "1",
-      "to": "3",
-      "type": "Sends Data"
-    }
-  ]
+  "connections": []
 }
