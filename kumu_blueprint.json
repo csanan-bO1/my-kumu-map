@@ -1,0 +1,34 @@
+{
+  "elements": [
+    {
+      "id": "1",
+      "label": "Mother Ship",
+      "type": "Server",
+      "reference_link": "http://myserver.com"
+    },
+    {
+      "id": "2",
+      "label": "Satellite A",
+      "type": "Node",
+      "reference_link": "http://google.com"
+    },
+    {
+      "id": "3",
+      "label": "Satellite B",
+      "type": "Node",
+      "reference_link": "http://rstudio.com"
+    }
+  ],
+  "connections": [
+    {
+      "from": "1",
+      "to": "2",
+      "type": "Sends Data"
+    },
+    {
+      "from": "1",
+      "to": "3",
+      "type": "Sends Data"
+    }
+  ]
+}
