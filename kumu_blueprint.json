@@ -1,86 +1,187 @@
 {
   "elements": [
     {
-      "label": "2025-12-09",
+      "label": "10-12-2025",
       "type": "Date",
       "Status": "Completed",
-      "description": "Solution for Mothership Flow: Automating Spokes to Kumu",
-      "Spoke": "[Tech]",
-      "reference_link": "https://drive.google.com/file/d/1XhOqobrE-BVJQL22njShhvRvqIYjKdZI/view?usp=drivesdk",
-      "id": "2025-12-09"
+      "description": "Scheduled date for implementing the Anti-Hallucination/Feedback Protocol",
+      "Spoke": "Academic",
+      "reference_link": "Report_Date.pdf",
+      "id": "10-12-2025"
     },
     {
-      "label": "Mothership Flow",
-      "type": "System",
-      "Status": "Designed",
-      "description": "Automated pipeline: Gemini > R Script > JSON > GitHub > Kumu",
-      "Spoke": "[Tech]",
-      "reference_link": "https://drive.google.com/file/d/1XhOqobrE-BVJQL22njShhvRvqIYjKdZI/view?usp=drivesdk",
-      "id": "Mothership Flow"
+      "label": "Work",
+      "type": "Pillar",
+      "Status": "Ongoing",
+      "description": "Professional work as a University Lecturer",
+      "Spoke": "Academic",
+      "reference_link": "Report_Date.pdf",
+      "id": "Work"
     },
     {
-      "label": "JSON Blueprint",
-      "type": "Artifact",
-      "Status": "Planned",
-      "description": "Intermediate file format for error-free import",
-      "Spoke": "[Tech]",
-      "reference_link": "https://drive.google.com/file/d/1XhOqobrE-BVJQL22njShhvRvqIYjKdZI/view?usp=drivesdk",
-      "id": "JSON Blueprint"
+      "label": "Modern Courses (AUN-QA)",
+      "type": "Project",
+      "Status": "Ongoing",
+      "description": "Design and development of modern courses (FE) aligned with AUN-QA",
+      "Spoke": "Academic",
+      "reference_link": "Report_Date.pdf",
+      "id": "Modern Courses (AUN-QA)"
     },
     {
-      "label": "R Auto-Script",
+      "label": "Learning Feedback Flow",
+      "type": "Insight",
+      "Status": "Completed",
+      "description": "Identified failure mode: AI returns 'empty' answers without specific source anchoring",
+      "Spoke": "Academic",
+      "reference_link": "Report_Date.pdf",
+      "id": "Learning Feedback Flow"
+    },
+    {
+      "label": "Source-Anchored Workflow",
+      "type": "Insight",
+      "Status": "Ongoing",
+      "description": "New protocol: Input Source -> Tutor Script -> Interaction -> Reporter Script",
+      "Spoke": "Academic",
+      "reference_link": "Report_Date.pdf",
+      "id": "Source-Anchored Workflow"
+    },
+    {
+      "label": "Anti-Hallucination Protocol",
       "type": "Task",
-      "Status": "In Progress",
-      "description": "Script to parse text reports and push JSON to Git",
-      "Spoke": "[Tech]",
-      "reference_link": "https://drive.google.com/file/d/1XhOqobrE-BVJQL22njShhvRvqIYjKdZI/view?usp=drivesdk",
-      "id": "R Auto-Script"
+      "Status": "Ongoing",
+      "description": "Design strictly grounded prompts that force AI to cite sources or admit ignorance (Agile Step)",
+      "Spoke": "Academic",
+      "reference_link": "Report_Date.pdf",
+      "id": "Anti-Hallucination Protocol"
     },
     {
-      "label": "GitHub Repo",
-      "type": "Infrastructure",
-      "Status": "Selected",
-      "description": "Version control host for the live Kumu data",
-      "Spoke": "[Tech]",
-      "reference_link": "https://drive.google.com/file/d/1XhOqobrE-BVJQL22njShhvRvqIYjKdZI/view?usp=drivesdk",
-      "id": "GitHub Repo"
+      "label": "Fact-Checking Reporter",
+      "type": "Task",
+      "Status": "Ongoing",
+      "description": "Update extraction script to include a 'Source Verification' step for students",
+      "Spoke": "Academic",
+      "reference_link": "Report_Date.pdf",
+      "id": "Fact-Checking Reporter"
+    },
+    {
+      "label": "Design Interview Script",
+      "type": "Task",
+      "Status": "Ongoing",
+      "description": "Create script to interview students based specifically on lesson sources",
+      "Spoke": "Academic",
+      "reference_link": "Report_Date.pdf",
+      "id": "Design Interview Script"
+    },
+    {
+      "label": "Agile Iteration (Feedback)",
+      "type": "Task",
+      "Status": "Ongoing",
+      "description": "Discuss each step of the feedback flow to minimize faults (hallucinations)",
+      "Spoke": "Academic",
+      "reference_link": "Report_Date.pdf",
+      "id": "Agile Iteration (Feedback)"
+    },
+    {
+      "label": "Ministry of University",
+      "type": "Person",
+      "Status": "Ongoing",
+      "description": "Entity issuing the new AI integration policy",
+      "Spoke": "Academic",
+      "reference_link": "Report_Date.pdf",
+      "id": "Ministry of University"
     }
   ],
   "connections": [
     {
-      "from": "2025-12-09",
-      "to": "Mothership Flow",
+      "from": "10-12-2025",
+      "to": "Source-Anchored Workflow",
       "type": "+",
-      "Description": "defines solution for",
-      "Spoke": "[Tech]"
+      "Description": "scheduled_implementation",
+      "Spoke": "Academic"
     },
     {
-      "from": "Mothership Flow",
-      "to": "R Auto-Script",
+      "from": "10-12-2025",
+      "to": "Anti-Hallucination Protocol",
       "type": "+",
-      "Description": "powered by",
-      "Spoke": "[Tech]"
+      "Description": "scheduled_task",
+      "Spoke": "Academic"
     },
     {
-      "from": "R Auto-Script",
-      "to": "JSON Blueprint",
-      "type": ">",
-      "Description": "generates",
-      "Spoke": "[Tech]"
+      "from": "10-12-2025",
+      "to": "Fact-Checking Reporter",
+      "type": "+",
+      "Description": "scheduled_task",
+      "Spoke": "Academic"
     },
     {
-      "from": "JSON Blueprint",
-      "to": "GitHub Repo",
-      "type": ">",
-      "Description": "stored in",
-      "Spoke": "[Tech]"
+      "from": "10-12-2025",
+      "to": "Design Interview Script",
+      "type": "+",
+      "Description": "scheduled_task",
+      "Spoke": "Academic"
     },
     {
-      "from": "GitHub Repo",
-      "to": "Mothership Flow",
+      "from": "10-12-2025",
+      "to": "Agile Iteration (Feedback)",
+      "type": "+",
+      "Description": "scheduled_task",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "Work",
+      "to": "Modern Courses (AUN-QA)",
+      "type": "+",
+      "Description": "includes_project",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "Modern Courses (AUN-QA)",
+      "to": "Learning Feedback Flow",
+      "type": "+",
+      "Description": "identified_issue",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "Modern Courses (AUN-QA)",
+      "to": "Source-Anchored Workflow",
+      "type": "+",
+      "Description": "mitigation_strategy",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "Learning Feedback Flow",
+      "to": "Anti-Hallucination Protocol",
       "type": ">",
-      "Description": "updates",
-      "Spoke": "[Tech]"
+      "Description": "triggers",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "Source-Anchored Workflow",
+      "to": "Anti-Hallucination Protocol",
+      "type": "+",
+      "Description": "requires",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "Source-Anchored Workflow",
+      "to": "Fact-Checking Reporter",
+      "type": "+",
+      "Description": "requires",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "Source-Anchored Workflow",
+      "to": "Design Interview Script",
+      "type": "+",
+      "Description": "requires",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "Agile Iteration (Feedback)",
+      "to": "Anti-Hallucination Protocol",
+      "type": "+",
+      "Description": "refines",
+      "Spoke": "Academic"
     }
   ]
 }
