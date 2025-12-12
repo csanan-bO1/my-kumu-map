@@ -1,148 +1,67 @@
 {
   "elements": [
     {
-      "label": "Summary of Collaborative Tasks",
+      "label": "Daily Collaborative Summary (12-12-25)",
       "type": "Project",
       "Status": "Completed",
-      "description": "Compilation of all tasks, decisions, and outputs from our collaborative sessions",
+      "description": "Summary of all tasks and outputs generated on December 12, 2025",
       "tags": "Academic",
       "reference_link": "Local_Ref",
-      "id": "Summary of Collaborative Tasks"
+      "id": "Daily Collaborative Summary (12-12-25)"
     },
     {
-      "label": "AUN-QA Framework Analysis",
+      "label": "Source-Anchored Workflow Design",
       "type": "Task",
       "Status": "Completed",
-      "description": "Analyzed the AUN-QA IQA Framework for course design integration",
+      "description": "Designed a workflow where students upload specific sources to prevent AI hallucinations",
       "tags": "Academic",
       "reference_link": "Local_Ref",
-      "id": "AUN-QA Framework Analysis"
-    },
-    {
-      "label": "FE Course Scaffolding",
-      "type": "Task",
-      "Status": "Completed",
-      "description": "Created a blueprint for Food Engineering courses (FE1 & FE2) based on AUN-QA",
-      "tags": "Academic",
-      "reference_link": "Local_Ref",
-      "id": "FE Course Scaffolding"
-    },
-    {
-      "label": "Pedagogical Tool Integration",
-      "type": "Task",
-      "Status": "Completed",
-      "description": "Integrated Flipped Classroom, Kahoot!, Colab, and Design Thinking into the FE course",
-      "tags": "Academic",
-      "reference_link": "Local_Ref",
-      "id": "Pedagogical Tool Integration"
-    },
-    {
-      "label": "Narrative & Microlearning Design",
-      "type": "Task",
-      "Status": "Completed",
-      "description": "Developed 'The Food Engineer's Journey' narrative and microlearning strategy",
-      "tags": "Academic",
-      "reference_link": "Local_Ref",
-      "id": "Narrative & Microlearning Design"
-    },
-    {
-      "label": "16-Week Syllabus Creation",
-      "type": "Task",
-      "Status": "Completed",
-      "description": "Designed a complete 16-week syllabus for the FE course",
-      "tags": "Academic",
-      "reference_link": "Local_Ref",
-      "id": "16-Week Syllabus Creation"
-    },
-    {
-      "label": "Mission Design (2-4)",
-      "type": "Task",
-      "Status": "Completed",
-      "description": "Created detailed lesson plans for Missions 2, 3, and 4",
-      "tags": "Academic",
-      "reference_link": "Local_Ref",
-      "id": "Mission Design (2-4)"
-    },
-    {
-      "label": "Codebook V1.1 Boot",
-      "type": "Task",
-      "Status": "Completed",
-      "description": "Adopted the 'Master Mind Codebook V1.1' strategic framework",
-      "tags": "Academic",
-      "reference_link": "Local_Ref",
-      "id": "Codebook V1.1 Boot"
-    },
-    {
-      "label": "GBL Integration",
-      "type": "Task",
-      "Status": "Completed",
-      "description": "Synthesized Game-Based Learning principles into the pedagogical framework",
-      "tags": "Academic",
-      "reference_link": "Local_Ref",
-      "id": "GBL Integration"
-    },
-    {
-      "label": "Grand Synthesis (V2.0)",
-      "type": "Task",
-      "Status": "Completed",
-      "description": "Created the 'Teaching Master Codebook V2.0' based on 5 core sources",
-      "tags": "Academic",
-      "reference_link": "Local_Ref",
-      "id": "Grand Synthesis (V2.0)"
-    },
-    {
-      "label": "Mission-Driven Learning Loop",
-      "type": "Hub",
-      "Status": "Completed",
-      "description": "The core pedagogical model: Hook, Intel, Sandbox, Debrief",
-      "tags": "Academic",
-      "reference_link": "Local_Ref",
-      "id": "Mission-Driven Learning Loop"
-    },
-    {
-      "label": "AI Integration Layer",
-      "type": "Task",
-      "Status": "Completed",
-      "description": "Designed a strategy to infuse AI into all stages of the learning loop",
-      "tags": "Academic",
-      "reference_link": "Local_Ref",
-      "id": "AI Integration Layer"
-    },
-    {
-      "label": "PKG Reporting Codebooks (V1-V9)",
-      "type": "Task",
-      "Status": "Completed",
-      "description": "Developed iterative versions of the reporting codebook for Kumu data extraction",
-      "tags": "Academic",
-      "reference_link": "Local_Ref",
-      "id": "PKG Reporting Codebooks (V1-V9)"
+      "id": "Source-Anchored Workflow Design"
     },
     {
       "label": "Anti-Hallucination Protocol",
       "type": "Task",
       "Status": "Completed",
-      "description": "Designed a 'Source-Anchored' workflow to prevent AI hallucinations",
+      "description": "Developed a strategy to force AI to cite sources or admit ignorance",
       "tags": "Academic",
       "reference_link": "Local_Ref",
       "id": "Anti-Hallucination Protocol"
     },
     {
+      "label": "Fact-Checking Reporter Script",
+      "type": "Task",
+      "Status": "Completed",
+      "description": "Created a script for students to verify AI answers against source texts",
+      "tags": "Academic",
+      "reference_link": "Local_Ref",
+      "id": "Fact-Checking Reporter Script"
+    },
+    {
+      "label": "PKG Reporting Codebooks (V1-V9)",
+      "type": "Task",
+      "Status": "Completed",
+      "description": "Generated multiple versions of the reporting codebook for Kumu data extraction",
+      "tags": "Academic",
+      "reference_link": "Local_Ref",
+      "id": "PKG Reporting Codebooks (V1-V9)"
+    },
+    {
       "label": "Student Reflection Protocol",
       "type": "Task",
       "Status": "Completed",
-      "description": "Created scripts for students to generate their own learning data",
+      "description": "Designed scripts for students to generate their own learning data (Success/Friction)",
       "tags": "Academic",
       "reference_link": "Local_Ref",
       "id": "Student Reflection Protocol"
     },
     {
-      "label": "R Script Development",
+      "label": "R Script Development (V1-V5)",
       "type": "Task",
       "Status": "Completed",
-      "description": "Wrote R scripts (V1-V5) to process student data into Kumu JSON format",
+      "description": "Wrote R scripts to process student JSON text files for Kumu import",
       "tags": "Academic",
       "reference_link": "Local_Ref",
-      "id": "R Script Development"
+      "id": "R Script Development (V1-V5)"
     },
     {
       "label": "Adaptive Learning Website Strategy",
@@ -154,13 +73,13 @@
       "id": "Adaptive Learning Website Strategy"
     },
     {
-      "label": "SiteWoW Prototype",
+      "label": "SiteWoW Prototype Generation",
       "type": "Task",
       "Status": "Completed",
       "description": "Generated HTML/Tailwind code for the website prototype (Flip Cards, Nature Theme)",
       "tags": "Academic",
       "reference_link": "Local_Ref",
-      "id": "SiteWoW Prototype"
+      "id": "SiteWoW Prototype Generation"
     },
     {
       "label": "Mass Balance AI Assets",
@@ -172,22 +91,49 @@
       "id": "Mass Balance AI Assets"
     },
     {
-      "label": "AI Tools Page",
+      "label": "AI Tools Page Creation",
       "type": "Task",
       "Status": "Completed",
       "description": "Created the HTML for the 'AI Tools' page with copy-able scripts",
       "tags": "Academic",
       "reference_link": "Local_Ref",
-      "id": "AI Tools Page"
+      "id": "AI Tools Page Creation"
     },
     {
-      "label": "GitHub Pages Deployment",
+      "label": "GitHub Pages Deployment Guide",
       "type": "Task",
       "Status": "Completed",
-      "description": "Guided the setup of a GitHub repository and Pages for website hosting",
+      "description": "Provided a step-by-step guide for hosting the website on GitHub Pages",
       "tags": "Academic",
       "reference_link": "Local_Ref",
-      "id": "GitHub Pages Deployment"
+      "id": "GitHub Pages Deployment Guide"
+    },
+    {
+      "label": "Bridge Link Implementation",
+      "type": "Task",
+      "Status": "Completed",
+      "description": "Added direct 'Get Source' links to Google Drive within the website prototype",
+      "tags": "Academic",
+      "reference_link": "Local_Ref",
+      "id": "Bridge Link Implementation"
+    },
+    {
+      "label": "VS Code / GitHub Troubleshooting",
+      "type": "Task",
+      "Status": "Completed",
+      "description": "Resolved issues with file naming (index.html) and git commit workflow",
+      "tags": "Academic",
+      "reference_link": "Local_Ref",
+      "id": "VS Code / GitHub Troubleshooting"
+    },
+    {
+      "label": "Universal PKG Reporting Codebook (V11.0)",
+      "type": "Task",
+      "Status": "Completed",
+      "description": "Applied the V11.0 Miner prompt to summarize the day's work",
+      "tags": "Academic",
+      "reference_link": "Local_Ref",
+      "id": "Universal PKG Reporting Codebook (V11.0)"
     },
     {
       "label": "Food & Process Engineering Technology textbook.pdf",
@@ -255,185 +201,157 @@
   ],
   "connections": [
     {
-      "from": "Summary of Collaborative Tasks",
-      "to": "AUN-QA Framework Analysis",
+      "from": "Daily Collaborative Summary (12-12-25)",
+      "to": "Source-Anchored Workflow Design",
       "type": "+",
       "Description": "includes_task",
       "Spoke": "Academic"
     },
     {
-      "from": "Summary of Collaborative Tasks",
-      "to": "FE Course Scaffolding",
-      "type": "+",
-      "Description": "includes_task",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "Summary of Collaborative Tasks",
-      "to": "Pedagogical Tool Integration",
-      "type": "+",
-      "Description": "includes_task",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "Summary of Collaborative Tasks",
-      "to": "Narrative & Microlearning Design",
-      "type": "+",
-      "Description": "includes_task",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "Summary of Collaborative Tasks",
-      "to": "16-Week Syllabus Creation",
-      "type": "+",
-      "Description": "includes_task",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "Summary of Collaborative Tasks",
-      "to": "Mission Design (2-4)",
-      "type": "+",
-      "Description": "includes_task",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "Summary of Collaborative Tasks",
-      "to": "Codebook V1.1 Boot",
-      "type": "+",
-      "Description": "includes_task",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "Summary of Collaborative Tasks",
-      "to": "GBL Integration",
-      "type": "+",
-      "Description": "includes_task",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "Summary of Collaborative Tasks",
-      "to": "Grand Synthesis (V2.0)",
-      "type": "+",
-      "Description": "includes_task",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "Summary of Collaborative Tasks",
-      "to": "AI Integration Layer",
-      "type": "+",
-      "Description": "includes_task",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "Summary of Collaborative Tasks",
-      "to": "PKG Reporting Codebooks (V1-V9)",
-      "type": "+",
-      "Description": "includes_task",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "Summary of Collaborative Tasks",
+      "from": "Daily Collaborative Summary (12-12-25)",
       "to": "Anti-Hallucination Protocol",
       "type": "+",
       "Description": "includes_task",
       "Spoke": "Academic"
     },
     {
-      "from": "Summary of Collaborative Tasks",
+      "from": "Daily Collaborative Summary (12-12-25)",
+      "to": "Fact-Checking Reporter Script",
+      "type": "+",
+      "Description": "includes_task",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "Daily Collaborative Summary (12-12-25)",
+      "to": "PKG Reporting Codebooks (V1-V9)",
+      "type": "+",
+      "Description": "includes_task",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "Daily Collaborative Summary (12-12-25)",
       "to": "Student Reflection Protocol",
       "type": "+",
       "Description": "includes_task",
       "Spoke": "Academic"
     },
     {
-      "from": "Summary of Collaborative Tasks",
-      "to": "R Script Development",
+      "from": "Daily Collaborative Summary (12-12-25)",
+      "to": "R Script Development (V1-V5)",
       "type": "+",
       "Description": "includes_task",
       "Spoke": "Academic"
     },
     {
-      "from": "Summary of Collaborative Tasks",
+      "from": "Daily Collaborative Summary (12-12-25)",
       "to": "Adaptive Learning Website Strategy",
       "type": "+",
       "Description": "includes_task",
       "Spoke": "Academic"
     },
     {
-      "from": "Summary of Collaborative Tasks",
-      "to": "SiteWoW Prototype",
+      "from": "Daily Collaborative Summary (12-12-25)",
+      "to": "SiteWoW Prototype Generation",
       "type": "+",
       "Description": "includes_task",
       "Spoke": "Academic"
     },
     {
-      "from": "Summary of Collaborative Tasks",
+      "from": "Daily Collaborative Summary (12-12-25)",
       "to": "Mass Balance AI Assets",
       "type": "+",
       "Description": "includes_task",
       "Spoke": "Academic"
     },
     {
-      "from": "Summary of Collaborative Tasks",
-      "to": "AI Tools Page",
+      "from": "Daily Collaborative Summary (12-12-25)",
+      "to": "AI Tools Page Creation",
       "type": "+",
       "Description": "includes_task",
       "Spoke": "Academic"
     },
     {
-      "from": "Summary of Collaborative Tasks",
-      "to": "GitHub Pages Deployment",
+      "from": "Daily Collaborative Summary (12-12-25)",
+      "to": "GitHub Pages Deployment Guide",
       "type": "+",
       "Description": "includes_task",
       "Spoke": "Academic"
     },
     {
-      "from": "Grand Synthesis (V2.0)",
-      "to": "Mission-Driven Learning Loop",
+      "from": "Daily Collaborative Summary (12-12-25)",
+      "to": "Bridge Link Implementation",
+      "type": "+",
+      "Description": "includes_task",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "Daily Collaborative Summary (12-12-25)",
+      "to": "VS Code / GitHub Troubleshooting",
+      "type": "+",
+      "Description": "includes_task",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "Daily Collaborative Summary (12-12-25)",
+      "to": "Universal PKG Reporting Codebook (V11.0)",
+      "type": "+",
+      "Description": "includes_task",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "Source-Anchored Workflow Design",
+      "to": "Anti-Hallucination Protocol",
       "type": ">",
-      "Description": "generates",
+      "Description": "requires",
       "Spoke": "Academic"
     },
     {
-      "from": "Mission-Driven Learning Loop",
-      "to": "AI Integration Layer",
+      "from": "Adaptive Learning Website Strategy",
+      "to": "SiteWoW Prototype Generation",
+      "type": ">",
+      "Description": "leads_to",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "SiteWoW Prototype Generation",
+      "to": "Mass Balance AI Assets",
       "type": "+",
-      "Description": "enhances",
+      "Description": "contains_content",
       "Spoke": "Academic"
     },
     {
-      "from": "FE Course Scaffolding",
+      "from": "SiteWoW Prototype Generation",
+      "to": "AI Tools Page Creation",
+      "type": "+",
+      "Description": "links_to",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "GitHub Pages Deployment Guide",
+      "to": "SiteWoW Prototype Generation",
+      "type": ">",
+      "Description": "deploys",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "Bridge Link Implementation",
+      "to": "Mass Balance AI Assets",
+      "type": ">",
+      "Description": "accesses",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "VS Code / GitHub Troubleshooting",
+      "to": "GitHub Pages Deployment Guide",
+      "type": "!",
+      "Description": "resolves_issue_in",
+      "Spoke": "Academic"
+    },
+    {
+      "from": "Source-Anchored Workflow Design",
       "to": "Food & Process Engineering Technology textbook.pdf",
       "type": "@",
-      "Description": "based_on",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "Narrative & Microlearning Design",
-      "to": "Data_Driven_Storytelling.pdf",
-      "type": "@",
-      "Description": "informed_by",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "Narrative & Microlearning Design",
-      "to": "microlearning_sys-review25.pdf",
-      "type": "@",
-      "Description": "informed_by",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "16-Week Syllabus Creation",
-      "to": "R Paul Singh Food Engineering.pdf",
-      "type": "@",
-      "Description": "based_on",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "GBL Integration",
-      "to": "Handbook_of_Game_Based_Learning.pdf",
-      "type": "@",
-      "Description": "informed_by",
+      "Description": "uses_as_anchor",
       "Spoke": "Academic"
     },
     {
@@ -448,27 +366,6 @@
       "to": "SiteWoW_reengineering-Next Steps.md",
       "type": "@",
       "Description": "incorporates",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "SiteWoW Prototype",
-      "to": "Mass Balance AI Assets",
-      "type": "+",
-      "Description": "contains_content",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "GitHub Pages Deployment",
-      "to": "SiteWoW Prototype",
-      "type": ">",
-      "Description": "hosts",
-      "Spoke": "Academic"
-    },
-    {
-      "from": "GitHub Pages Deployment",
-      "to": "AI Tools Page",
-      "type": ">",
-      "Description": "hosts",
       "Spoke": "Academic"
     }
   ]
